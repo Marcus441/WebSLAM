@@ -28,6 +28,10 @@ To build and run this project locally, follow these steps:
    cd WebSLAM ```
 2. Install dependencies
 3. Build the project (C/C++ to WebAssembley)
-   ```emcc src/main.c -o build/slam.js```
+   ```bash
+   emcc src/main.c -o build/slam.js```
 5. Run the project
-   ```python3 -m http.server  # Use a simple HTTP server to run the project locally```
+   Use a simple HTTP server to run the project locally
+   ```bash
+   python3 -m http.server```
+   
