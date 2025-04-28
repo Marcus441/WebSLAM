@@ -31,7 +31,7 @@ To build and run this project locally, follow these steps:
    ```bash
    emcc src/main.c -o build/slam.js```
 5. Run the project
-   Use a simple HTTP server to run the project locally
+Use a simple HTTP server to run the project locally
    ```bash
    python3 -m http.server```
    
