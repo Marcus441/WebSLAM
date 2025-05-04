@@ -25,13 +25,16 @@ To build and run this project locally, follow these steps:
 1. Clone the repository:
    ```bash
    git clone https://github.com/Marcus441/WebSLAM.git
-   cd WebSLAM ```
+   cd WebSLAM
+   ```
 2. Install dependencies
 3. Build the project (C/C++ to WebAssembley)
    ```bash
-   emcc src/main.c -o build/slam.js```
+   emcc src/main.c -o build/slam.js
+   ```
 5. Run the project
 Use a simple HTTP server to run the project locally
    ```bash
-   python3 -m http.server```
+   python3 -m http.server
+   ```
    
