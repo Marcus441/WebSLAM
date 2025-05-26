@@ -42,7 +42,7 @@
               CLANGD_FLAGS = "--query-driver=${pkgs.lib.getExe stdenv.cc}++";
               CC = "${llvm.clang-unwrapped}/bin/clang";
               CXX = "${llvm.clang-unwrapped}/bin/clang++";
-              CXXFLAGS = "-std=c++20 -stdlib=libc++";
+              CXXFLAGS = "-std=c++20";
               LDFLAGS = "-stdlib=libc++";
             };
             shellHook = ''
