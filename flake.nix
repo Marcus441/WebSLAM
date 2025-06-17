@@ -6,7 +6,7 @@
     utils.url = "github:numtide/flake-utils";
   };
 
-  outputs = { self, nixpkgs, utils, ... }@inputs:
+  outputs = { nixpkgs, utils, ... }:
     utils.lib.eachDefaultSystem (
       system:
       let
@@ -44,10 +44,10 @@
               CXX = "${llvm.clang-unwrapped}/bin/clang++";
               CXXFLAGS = "-std=c++20";
               LDFLAGS = "-stdlib=libc++";
+              CLANG_CXX = "${llvm.clang-unwrapped}/bin/clang++";
+              CLANG = "${llvm.clang-unwrapped}/bin/clang";
             };
             shellHook = ''
-              export CLANG_CXX=${llvm.clang-unwrapped}/bin/clang++
-              export CLANG=${llvm.clang-unwrapped}/bin/clang
               echo "C/C++ development environment activated!"
               echo "Using Clang version: $(clang --version | head -n 1)"
             '';
